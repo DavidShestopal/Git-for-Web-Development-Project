@@ -1,9 +1,7 @@
  1. What is Semantic HTML? 
 Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define its presentation or look.
-
     2. What is HTML used for? 
 HTML code ensures the proper formatting of text and images so that your Internet browser may display them as they are intended to look.
-
     3. What is an attribute and where do we put it? 
 Attributes provide additional information about HTML elements and they go in front of the images and websites.
     4. What is the h1 tag used for? How many times should I use it on a page?
@@ -44,29 +42,62 @@ Id is more exact or more powerful than a class. For example if you want to selec
 To select a class you’d put a period in front of the name.
     21. How do we select a p element with a single class of “human””?
 To select a p element with a single class you’d put <p .human>.
-    22. What is a parent child selector? When would this be useful? 
-A parent child selector selects all elements that are a direct child of the specified element. It is useful when 
+    22. What is a parent-child selector? When would this be useful? 
+A parent-child selector selects all elements that are a direct child of the specified element. It is useful when you are trying to style a page with multiple tags that are the same. 
     23. How do you select all links within a div with the class of sidebar?
+You type div.class which should select all the links I think.
     24. What is a pseudo selector?
+Pseudo-classes are used when you may not have a set amount of elements, but you still want to style them individually.
     25. What do we use the change the spacing between lines?
+You  can do this, for example, p{ line-spacing =1.4;}.
     26. What do we use to change the spacing between letters?
-    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+You can do this p{ letter-spacing = 1.4;}.
+    27. What do we use to change everything to CAPITALS? lowercase? Capitalize?
+We use the CSS text-transform property.
     28. How do I add a 1px border around my div that is dotted and black?
+You add {border: 1px;} to an txt selected. 
     29. How do I select everything on the page? 
+To select everything on the page we use the * character to do so. 
     30. How do I write a comment in CSS?
-    31. How do I find out what file I am in, when I am using the command line? 
+You can write comments in CSS but using /* */ around the comment. 
+    31. How do I find out what file I am in when I am using the command line? 
+You can check by using “git status “to find out where you are located.
     32. Using the command line - how do I see a list of files/folders in my current folder?
+You can see the list of files in the current folder by using” ls”.
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+You can use “rm” and you have to be careful because there aren’t any safety nets.
     34. Why should I use version control? 
+We use version control to save things, for collaborations, restoring previous versions.
     35. How often should I commit to github?
+You should about every 20 mins. 
     36. What is the command we would use to push our repo up to github? 
+We would use git add . then we use commit -m “” and finally we use git push -u origin and your name. 
     37. Walk me through Lambda's git flow. 
+1.Create YOUR OWN version of Repo —> (Fork)
+2.Your name should now be in front of the repo name before the slash '/' if forking is successful
+3.Add your TL (me) as a collaborator on your forked Repo.
+4. Clone your Repo using githubs 'Clone or download' button
+5. Back inside your CLI, use the cd command to go to the directory where you are going to want to clone your forked Repo 
+6.Use the git clone <link-to-repo> command to clone the repo to the directory you are currently in.
+7.cd into the newly created repo using the cd <repo-name> command
+8.Use the git checkout -b 'firstname-lastname' command to create your own branch name for the repo
+9. Now you can work on your repo and start getting the project assignment done.
+10. To add and commit changes on your branch 
+11. Push your changes back up to your Github repo
+12.Now that the changes are on github you can submit a PR
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content. By default, inline elements do not force a new line to begin in the document flow. Block elements, on the other hand, typically cause a line break to occur (although, as usual, this can be changed using CSS).
     2. What happens when an element is positioned absolutely? 
+When an element is absolutely positioned then that element has a  computed position value which  is absolute or fixed. The top, right, bottom, and left properties specify offsets from the edges of the element's containing block.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+By using margins or padding we are able to do that. 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the fix for the box model? 
 
+    5. In your own words, explain the box model. What is the fix for the box model? 
+The box model is a model used to style a page using margins and other things. The fix is the box-sizing: border-box. 
+
+Code Pen link : https://codepen.io/DavidShestopal/pen/yLyqMaO?editors=1100
+ 
